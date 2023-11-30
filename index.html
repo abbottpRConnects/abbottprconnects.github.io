@@ -11,19 +11,19 @@
         padding: 0;
         overflow: hidden; /* Optional: to remove scrollbars */
     }
-    #videoiFrame {
+    #videoEmbed {
         width: 100vw;   /* 100% of the viewport width */
         height: 100vh;  /* 100% of the viewport height */
     }
     </style>
 </head>
 <body>
-    <iframe 
-        id="videoiFrame"
-        src="https://mesquitenv.granicus.com/player/camera/3?&redirect=true" 
+    <embed 
+        id="videoEmbed"
         frameborder="0" 
-        allowfullscreen>
-    </iframe>
+        allowfullscreen="true" 
+        src="//mesquitenv.granicus.com/player/camera/3?&redirect=true&autostart=0&embed=1">
+    </embed>
     <script src="script.js"></script>
 </body>
 </html>
