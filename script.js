@@ -1,13 +1,12 @@
-// Wait for the DOM to be fully loaded
-document.addEventListener('DOMContentLoaded', function () {
-    // Find the element with the specified classes
-    var playButton = document.querySelector('.fp-icon.fp-playbtn');
+window.onload = function() {
+    // Find the play button
+    var playButton = document.querySelector('.fp-play .fp-icon.fp-playbtn');
 
-    // Check if the element exists
+    // Check if the play button exists
     if (playButton) {
-        // Programmatically click the element
+        // Simulate a click on the play button
         playButton.click();
     } else {
         console.log("Play button not found");
     }
-});
+};
