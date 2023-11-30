@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     setTimeout(function() {
         // Find the element with the specified classes
-        var playButton = document.querySelector('.fp-icon.fp-playbtn');
+        var playButton = document.querySelector('.fp-play.fp-visible .fp-icon.fp-playbtn');
 
         // Check if the element exists
         if (playButton) {
