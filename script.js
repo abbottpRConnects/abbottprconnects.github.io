@@ -6,6 +6,7 @@ window.onload = function() {
     if (playButton) {
         // Simulate a click on the play button
         playButton.click();
+        console.log("Play button clicked");
     } else {
         console.log("Play button not found");
     }
