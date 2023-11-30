@@ -11,5 +11,5 @@ window.onload = function() {
         } else {
             console.log("Play button not found");
         }
-    }, 5000); // 5000 milliseconds = 5 seconds
+    }, 1000); // 1000 milliseconds = 1 second
 };
