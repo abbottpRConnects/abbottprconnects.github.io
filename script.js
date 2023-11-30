@@ -1,10 +1,18 @@
+window.onload = function() {
+    var embed = document.getElementById('videoEmbed');
 
-  // Find the <i> element with the specified class
-  var expandIcon = document.querySelector('.fa.fa-expand');
-  // Check if the element exists
-  if (expandIcon) {
-    // Programmatically click the element
-    expandIcon.click();
-  } else {
-    console.log("Element not found");
-  }
+    if (embed) {
+        // Request Fullscreen
+        if (embed.requestFullscreen) {
+            embed.requestFullscreen();
+        } else if (embed.mozRequestFullScreen) { /* Firefox */
+            embed.mozRequestFullScreen();
+        } else if (embed.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+            embed.webkitRequestFullscreen();
+        } else if (embed.msRequestFullscreen) { /* IE/Edge */
+            embed.msRequestFullscreen();
+        }
+    } else {
+        console.log("Embed element not found");
+    }
+};
