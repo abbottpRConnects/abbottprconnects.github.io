@@ -1,0 +1,11 @@
+[
+    {
+        "id": 1,
+        "name": "Pace Abbott",
+        "vacationDays": [],
+        "schedule": {
+            "rotation": "Bi-weekly",
+            "days": ["Monday", "Tuesday", "Wednesday", "Thursday"]
+        }
+    }
+]
